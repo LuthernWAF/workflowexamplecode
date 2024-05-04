@@ -12,7 +12,7 @@ resource "google_storage_bucket" "raw" {
 
 terraform {
     backend "gcs" { 
-      bucket  = “Lizzo_bucket”
+      bucket  = Lizzo_bucket
       prefix  = "prod"
     }
 }
