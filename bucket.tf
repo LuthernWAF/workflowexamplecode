@@ -1,7 +1,7 @@
 # This is the bucket for your state files
 resource "google_storage_bucket" "raw" {
   project = var.project
-  name = "${var.data-project}-raw"
+  name = "${var.data_project}-raw"
   force_destroy = false
   uniform_bucket_level_access = true
   location = var.region
@@ -40,7 +40,7 @@ variable "region" {
     description = "Region Google project"
 }
 
-variable  "data-project" {
+variable  "data_project" {
     type = string
     default = "lizzo.lizzo"
     description = "Name of data pipeline project to use as resource prefix"
