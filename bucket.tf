@@ -30,19 +30,19 @@ locals {
 
 variable "project" {
     type= string
-    default = lizzo.lizzo"
+    default = "lizzo.lizzo"
     description = "ID Google project"
 }
 
 variable "region" {
     type= string
-    default = lizzo.lizzo"
+    default = "lizzo.lizzo"
     description = "Region Google project"
 }
 
 variable  "data-project" {
     type = string
-    default = lizzo.lizzo"
+    default = "lizzo.lizzo"
     description = "Name of data pipeline project to use as resource prefix"
 }
 
