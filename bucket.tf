@@ -24,7 +24,7 @@ provider "google" {
 
 locals {
     labels = {
-        "data-project" = var.data-project
+        "data-project" = var.data_project
     }
 }
 
